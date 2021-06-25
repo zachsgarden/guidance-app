@@ -18,7 +18,11 @@ import {
 library.add(faShoppingCart, faDollarSign, faSyringe);   
 
 import Login from './components/Login.vue';
-import Guidance from './components/Guidance.vue';
+import GuidanceOne from './components/GuidanceOne.vue';
+import GuidanceTwo from './components/GuidanceTwo.vue';
+import GuidanceThree from './components/GuidanceThree.vue';
+import GuidanceFour from './components/GuidanceFour.vue';
+
 
 Vue.use(VueRouter);
 Vue.config.productionTip = false;
@@ -30,8 +34,20 @@ const router = new VueRouter({
       component: Login
     },
     {
-      path: '/guidance',
-      component: Guidance
+      path: '/guidance-one',
+      component: GuidanceOne
+    },
+    {
+      path: '/guidance-two',
+      component: GuidanceTwo
+    },
+    {
+      path: '/guidance-three',
+      component: GuidanceThree
+    },
+    {
+      path: '/guidance-four',
+      component: GuidanceFour
     }
   ]
 })

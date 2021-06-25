@@ -1,9 +1,9 @@
 <!-- THIS IS FROM A TUTORIAL AND CAN BE DITCHED -->
 <template>
   <div class="container">
-    <h1>
+    <router-link to="/">
       <img class="logo" src="../assets/images/logo.png" alt="" />
-    </h1>
+    </router-link>
   </div>
 </template>
 
@@ -13,6 +13,6 @@ export default {};
 
 <style>
 .logo {
-  max-width: 200px;
+  max-width: 150px;
 }
 </style>

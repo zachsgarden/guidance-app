@@ -18,7 +18,7 @@
       <input type="text" placeholder="Password" class="mt-3" />
       <p class="forgot mt-2">Forgot Password?</p>
       <div class="submit-wrap mx-auto">
-        <router-link to="/guidance-one">
+        <router-link to="/moderate-hypovolemia">
           <input type="button" value="submit" class="btn-dark mt-5" />
         </router-link>
       </div>

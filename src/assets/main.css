@@ -63,7 +63,7 @@ input[type="text"]:focus-visible {
 }
 
 input[type="button"] {
-  width: 150px;
+  min-width: 150px;
   text-transform: uppercase;
   border: none;
   border-radius: 3px;

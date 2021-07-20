@@ -2,23 +2,32 @@
   <div
     class="container pt-5 d-flex flex-column justify-content-center animate__animated animate__fadeInRight full-height"
   >
-    <!-- SLIDE ONE -->
-    <div class="card-wrap d-flex flex-column align-items-center">
-      <div class="diamond-grp d-flex align-items-center align-center mt-5 mb-3">
+    <div class="card-wrap d-flex flex-column align-items-center" v-if="initial">
+      <div
+        class="diamond-grp d-flex align-items-center align-center mt-5 mb-3 justify-content-center"
+      >
         <div class="diamond box-shadow"></div>
-        <h4>Is patient actively bleeding?</h4>
+        <h4>Patient on Diuretics?</h4>
       </div>
-      <router-link to="/guidance-two" class="d-flex flex-column">
-        <input type="button" value="Yes" class="btn-dark mt-5" />
-        <input type="button" value="No" class="btn-dark red mt-3" />
-      </router-link>
+      <input
+        type="button"
+        value="Yes"
+        class="btn-dark mt-5"
+        v-on:click="initial = 'false'"
+      />
+      <input type="button" value="No" class="btn-dark red mt-3" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "guidance-one",
+  name: "Hypovolemia1A",
+  data: function() {
+    return {
+      initial: true,
+    };
+  },
 };
 </script>
 

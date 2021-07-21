@@ -37,9 +37,10 @@
 
 <script>
 import Anemia4B from "./Anemia4B.vue";
+import AnemiaConclusionA from "./AnemiaConclusionA.vue";
 
 export default {
-  components: { Anemia4B },
+  components: { Anemia4B, AnemiaConclusionA },
   name: "Anemia4A",
   data: function() {
     return {

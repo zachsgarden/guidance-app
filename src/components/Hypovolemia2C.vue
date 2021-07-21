@@ -9,43 +9,29 @@
           class="diamond-grp d-flex align-items-center align-center mt-5 mb-3 justify-content-center"
         >
           <div class="diamond box-shadow"></div>
-          <h4>Mean Arterial Pressure &#60; 80 mmHg?</h4>
+          <h4>IV Plasma Replacement Infusion</h4>
         </div>
-        <!-- YES AND NO BUTTONS -->
         <input
           type="button"
-          value="Yes"
+          value="Proceed"
           class="btn-dark mt-5"
-          v-on:click="(optionA = true), (initial = false)"
-        />
-        <input
-          type="button"
-          value="No"
-          class="btn-dark red mt-3"
-          v-on:click="(optionB = true), (initial = false)"
+          v-on:click="(proceed = true), (initial = false)"
         />
       </div>
     </div>
-    <div v-if="optionA">
-      <Anemia2C></Anemia2C>
-    </div>
-    <div v-if="optionB">
-      <Anemia3C></Anemia3C>
+    <div v-if="proceed">
+      <Hypovolemia3A></Hypovolemia3A>
     </div>
   </div>
 </template>
-
 <script>
-import Anemia2C from "./Anemia2C.vue";
-import Anemia3C from "./Anemia3C.vue";
+import Hypovolemia3A from "./Hypovolemia3A";
 export default {
-  components: { Anemia2C, Anemia3C },
-  name: "Anemia2B",
+  components: { Hypovolemia3A },
+  name: "Hypovolemia2C",
   data: function() {
     return {
       initial: true,
-      optionA: false,
-      optionB: false,
     };
   },
 };

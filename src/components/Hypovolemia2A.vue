@@ -9,7 +9,7 @@
           class="diamond-grp d-flex align-items-center align-center mt-5 mb-3 justify-content-center"
         >
           <div class="diamond box-shadow"></div>
-          <h4>Mean Arterial Pressure &#60; 80 mmHg?</h4>
+          <h4>Mean Arterial Pressure &#60; 60 mmHg?</h4>
         </div>
         <!-- YES AND NO BUTTONS -->
         <input
@@ -26,21 +26,23 @@
         />
       </div>
     </div>
+
     <div v-if="optionA">
-      <Anemia2C></Anemia2C>
+      <Hypovolemia2B></Hypovolemia2B>
     </div>
     <div v-if="optionB">
-      <Anemia3C></Anemia3C>
+      <Hypovolemia3A></Hypovolemia3A>
     </div>
   </div>
 </template>
 
 <script>
-import Anemia2C from "./Anemia2C.vue";
-import Anemia3C from "./Anemia3C.vue";
+import Hypovolemia2B from "./Hypovolemia2B.vue";
+import Hypovolemia3A from "./Hypovolemia3A.vue";
+
 export default {
-  components: { Anemia2C, Anemia3C },
-  name: "Anemia2B",
+  components: { Hypovolemia2B, Hypovolemia3A },
+  name: "Anemia1A",
   data: function() {
     return {
       initial: true,

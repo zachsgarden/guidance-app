@@ -11,6 +11,11 @@
           <div class="diamond box-shadow"></div>
           <h4>6.1 Units of Blood</h4>
         </div>
+        <div class="btn-wrap d-flex flex-column">
+          <router-link to="/ModerateHypovol">
+            <input type="button" value="Proceed" class="btn-dark mt-5" />
+          </router-link>
+        </div>
       </div>
     </div>
   </div>

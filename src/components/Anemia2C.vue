@@ -11,12 +11,14 @@
           <div class="diamond box-shadow"></div>
           <h4>Whole Blood Infusion</h4>
         </div>
-        <input
-          type="button"
-          value="Proceed"
-          class="btn-dark mt-5"
-          v-on:click="(proceed = true), (initial = false)"
-        />
+        <div class="btn-wrap d-flex flex-column">
+          <input
+            type="button"
+            value="Proceed"
+            class="btn-dark mt-5"
+            v-on:click="(proceed = true), (initial = false)"
+          />
+        </div>
       </div>
     </div>
     <div v-if="proceed">

@@ -7,18 +7,20 @@
         <div class="diamond box-shadow"></div>
         <h4>Moderate Hypovolemia</h4>
       </div>
-      <input
-        type="button"
-        value="Treat Anemia"
-        class="btn-dark mt-5"
-        v-on:click="(optionA = true), (initial = false)"
-      />
-      <input
-        type="button"
-        value="Treat Hypovolemia"
-        class="btn-dark red mt-3"
-        v-on:click="(optionB = true), (initial = false)"
-      />
+      <div class="btn-wrap d-flex flex-column">
+        <input
+          type="button"
+          value="Treat Anemia"
+          class="btn-dark mt-5"
+          v-on:click="(optionA = true), (initial = false)"
+        />
+        <input
+          type="button"
+          value="Treat Hypovolemia"
+          class="btn-dark red mt-3"
+          v-on:click="(optionB = true), (initial = false)"
+        />
+      </div>
     </div>
     <div v-if="optionA">
       <Anemia1A></Anemia1A>
@@ -35,7 +37,7 @@ import Hypovolemia1A from "./Hypovolemia1A.vue";
 
 export default {
   components: { Anemia1A, Hypovolemia1A },
-  name: "moderate-hypovolemia",
+  name: "ModerateHypovol",
   data: function() {
     return {
       initial: true,

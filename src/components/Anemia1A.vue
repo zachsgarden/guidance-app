@@ -12,18 +12,20 @@
           <h4>Active Bleeding?</h4>
         </div>
         <!-- YES AND NO BUTTONS -->
-        <input
-          type="button"
-          value="Yes"
-          class="btn-dark mt-5"
-          v-on:click="(optionA = true), (initial = false)"
-        />
-        <input
-          type="button"
-          value="No"
-          class="btn-dark red mt-3"
-          v-on:click="(optionB = true), (initial = false)"
-        />
+        <div class="btn-wrap d-flex flex-column">
+          <input
+            type="button"
+            value="Yes"
+            class="btn-dark mt-5"
+            v-on:click="showToast()"
+          />
+          <input
+            type="button"
+            value="No"
+            class="btn-dark red mt-3"
+            v-on:click="(optionB = true), (initial = false)"
+          />
+        </div>
       </div>
     </div>
 
@@ -37,11 +39,10 @@
 </template>
 
 <script>
-import Anemia1B from "./Anemia1B.vue";
 import Anemia2A from "./Anemia2A.vue";
 
 export default {
-  components: { Anemia1B, Anemia2A },
+  components: { Anemia2A },
   name: "Anemia1A",
   data: function() {
     return {

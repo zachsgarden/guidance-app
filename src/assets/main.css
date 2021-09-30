@@ -1,27 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@300;400&display=swap");
+
 :root {
   font-size: 16px;
   --daxor-blue: #22376c;
   --daxor-red: #c33a1e;
   --dark: #000000;
-  --main-font: "Barlow", sans-serif;
-  --copy-font: "Lato", sans-serif;
+  --main-font: "Lato", sans-serif;
+  --copy-font: "Cabin", sans-serif;
   --copy-color: #696969;
 }
 
 /* GLOBAL FONT STYLES */
+h1.light {
+  font-weight: 300;
+  line-height: 1.875rem;
+}
+
 h1,
 h2,
 h3 {
   font-family: var(--main-font);
   color: var(--daxor-blue);
-  font-weight: 800;
 }
 
-p,
 h4,
 h5,
 h6 {
+  font-family: var(--main-font);
+}
+
+p {
   font-family: var(--copy-font);
+  line-height: 1.3125rem;
 }
 
 a {
@@ -53,7 +63,7 @@ a {
 input[type="text"] {
   border: 3px solid var(--daxor-blue);
   padding: 0.5rem 1rem;
-  font-family: var(--copy-font);
+  font-family: var(--main-font);
   color: var(--daxor-blue);
 }
 

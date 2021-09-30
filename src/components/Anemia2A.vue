@@ -12,18 +12,20 @@
           <h4>Urgent Need to Correct Anemia?</h4>
         </div>
         <!-- YES AND NO BUTTONS -->
-        <input
-          type="button"
-          value="Yes"
-          class="btn-dark mt-5"
-          v-on:click="(optionA = true), (initial = false)"
-        />
-        <input
-          type="button"
-          value="No"
-          class="btn-dark red mt-3"
-          v-on:click="(optionB = true), (initial = false)"
-        />
+        <div class="btn-wrap d-flex flex-column">
+          <input
+            type="button"
+            value="Yes"
+            class="btn-dark mt-5"
+            v-on:click="(optionA = true), (initial = false)"
+          />
+          <input
+            type="button"
+            value="No"
+            class="btn-dark red mt-3"
+            v-on:click="(optionB = true), (initial = false)"
+          />
+        </div>
       </div>
     </div>
     <div v-if="optionA">

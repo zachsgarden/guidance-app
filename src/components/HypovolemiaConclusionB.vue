@@ -11,12 +11,11 @@
           <div class="diamond box-shadow"></div>
           <h4>Target Hct of 22.5</h4>
         </div>
-        <input
-          type="button"
-          value="Proceed"
-          class="btn-dark mt-5"
-          v-on:click="(proceed = true), (initial = false)"
-        />
+        <div class="btn-wrap d-flex flex-column">
+          <router-link to="/ModerateHypovol">
+            <input type="button" value="Proceed" class="btn-dark mt-5" />
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
